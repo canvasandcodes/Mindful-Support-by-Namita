@@ -1,6 +1,6 @@
 # 🌱 Mindful Support by Namita
 
-**Mindful Support by Namita** is a lightweight, browser-based mental health assistance tool designed to make everyday self-care simple and approachable. It provides short guided practices, helpful coping techniques, and resources you can use anytime — no sign-up or downloads required.
+**Mindful Support by Namita** is a lightweight, browser-based mental health assistance tool designed to make everyday self-care simple and approachable. It provides short guided practices, helpful coping techniques, and resources you can use anytime. No sign-up or downloads required.
 
 ---
 
