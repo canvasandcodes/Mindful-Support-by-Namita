@@ -38,7 +38,8 @@ Mindful-Support-by-Namita/
    ```bash
    git clone https://github.com/canvasandcodes/Mindful-Support-by-Namita.git
 
-   ⚠️ Disclaimer
+
+⚠️ Disclaimer
 
 This project is for educational and self-help purposes only. It is not a substitute for professional mental health care.
 
