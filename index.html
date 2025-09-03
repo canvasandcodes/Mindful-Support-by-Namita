@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulSupport AI - Your Compassionate Mental Health Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="chatbot-title">MindfulSupport AI</h1>
+                <p class="chatbot-subtitle">Your Compassionate Mental Health Companion</p>
+            </div>
+        </header>
+
+        <!-- Main Chat Interface -->
+        <main class="main-content">
+            <div class="chat-container">
+                <!-- Welcome Message -->
+                <div class="welcome-section" id="welcomeSection">
+                    <div class="welcome-message">
+                        <div class="welcome-icon">🌱</div>
+                        <h2>Welcome to a safe space</h2>
+                        <p>I'm here to listen, support, and help you navigate your mental health journey. You are not alone.</p>
+                    </div>
+                    
+                    <!-- Quick Action Buttons -->
+                    <div class="quick-actions">
+                        <h3>How can I support you today?</h3>
+                        <div class="action-buttons">
+                            <button class="btn btn--outline action-btn" data-action="anxiety">I'm feeling anxious</button>
+                            <button class="btn btn--outline action-btn" data-action="coping">I need coping strategies</button>
+                            <button class="btn btn--outline action-btn" data-action="mindfulness">Help me with mindfulness</button>
+                            <button class="btn btn--outline action-btn" data-action="thoughts">I'm having negative thoughts</button>
+                            <button class="btn btn--outline action-btn" data-action="talk">I need someone to talk to</button>
+                            <button class="btn btn--primary action-btn crisis-btn" data-action="crisis">Emergency support</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Messages Area -->
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Messages will be inserted here -->
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="typing-indicator" id="typingIndicator">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="typing-text">MindfulSupport AI is thinking...</span>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <input type="text" 
+                           class="chat-input form-control" 
+                           id="chatInput" 
+                           placeholder="Share what's on your mind... I'm here to listen"
+                           autocomplete="off">
+                    <button class="send-btn btn btn--primary" id="sendBtn">
+                        <span class="send-icon">→</span>
+                    </button>
+                </div>
+                <div class="chat-disclaimer">
+                    <p><strong>Important:</strong> This is a supportive chatbot, not a replacement for professional mental health care. In crisis situations, please call 988 (Suicide Prevention Lifeline) or 911.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Resource Modal -->
+        <div class="modal hidden" id="resourceModal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Mental Health Resources</h3>
+                    <button class="modal-close" id="modalClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="resource-section">
+                        <h4>Crisis Support</h4>
+                        <ul>
+                            <li>National Suicide Prevention Lifeline: <strong>988</strong></li>
+                            <li>Crisis Text Line: Text <strong>HOME</strong> to <strong>741741</strong></li>
+                            <li>National Alliance on Mental Illness: <strong>1-800-950-NAMI (6264)</strong></li>
+                            <li>SAMHSA Helpline: <strong>1-800-662-4357</strong></li>
+                        </ul>
+                    </div>
+                    <div class="resource-section">
+                        <h4>Professional Help</h4>
+                        <ul>
+                            <li><a href="https://www.psychologytoday.com/us/therapists" target="_blank">Psychology Today Therapist Finder</a></li>
+                            <li><a href="https://openpathcollective.org/" target="_blank">Open Path Collective - Affordable therapy</a></li>
+                            <li><a href="https://www.betterhelp.com/" target="_blank">BetterHelp - Online counseling</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <button class="footer-link" id="showResources">Resources</button>
+                    <span class="footer-separator">|</span>
+                    <button class="footer-link" id="clearChat">New Conversation</button>
+                </div>
+                <div class="creator-credit">
+                    <span>Created by Namita S</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
